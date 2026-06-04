@@ -1,4 +1,4 @@
-NAME = scalar
+NAME = iter
 
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++20
@@ -7,9 +7,9 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 
 INCLUDES = -I ./inc
-HEADERS = inc/ScalarConverter.hpp
+HEADERS = inc/iter.hpp
 
-SRCS = src/main.cpp src/ScalarConverter.cpp
+SRCS = src/main.cpp
 OBJS = $(patsubst $(SRC_DIR)%.cpp,$(OBJ_DIR)%.o,$(SRCS))
 .SECONDARY: $(OBJS)
 
